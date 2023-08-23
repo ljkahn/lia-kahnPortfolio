@@ -1,6 +1,9 @@
 * {
     font-family: 'DM Serif Display', serif;
+    scroll-behavior: smooth;
 }
+
+
 
 .hero {
     height: 800px;
@@ -107,4 +110,76 @@ figure {
         .thumbnail-two:hover { 
         transform: scale(1.2); 
         
+        }
+
+        /* a {
+            color: antiquewhite;
+        
+        } */
+
+
+            a{
+                background-image: linear-gradient(
+                  to right,
+                  #b5b5b5,
+                  #998a9d 50%,
+                  #857f7f 50%
+                );
+                background-size: 200% 100%;
+                background-position: -100%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 0.3s ease-in-out;
+              }
+
+              a:before{
+                content: '';
+                background: #d4b9a9;
+                display: block;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                transition: all 0.3s ease-in-out;
+              }
+              
+              a:hover {
+               background-position: 0;
+              }
+              
+     h2 {
+            background-color: rgb(163, 176, 147);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+     }
+
+        @media screen and (max-width: 992px) {
+            nav ul {
+                display: flex;
+                flex-direction: row;
+                margin-right: 1rem;
+                text-align: center;
+                
+            }
+            aside ul li {
+                display: flex;
+                flex-direction: column;
+                padding-left: 1rem;
+            }
+        }
+          @media screen and (max-width: 768px) {
+            nav {
+              background-color: #bb8588;
+            }
+          }
+          
+        
+          @media screen and (max-width: 576px) {
+            .sample-img {
+              background-color: #8ac4ff;
+            }
         }
