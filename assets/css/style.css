@@ -34,6 +34,10 @@ h1,p{
     align-items: center;
 }
 
+.hide {
+    display: none;
+}
+
 .img {
     border-radius: 50%;
 }
